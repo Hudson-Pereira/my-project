@@ -1,0 +1,125 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e3e3e3, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 600px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    color: #222;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f5f5f5;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item .item-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+#burguer .item-image {
+    background-image: url('./images/burguer.png');
+}
+
+#fries .item-image {
+    background-image: url('./images/fries.png');
+}
+
+#soda .item-image {
+    background-image: url('./images/soda.png');
+}
+
+.menu-info {
+    flex-grow: 1;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    text-align: left;
+}
+
+.menu-description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.menu-actions {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s, transform 0.2s;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #218838;
+    transform: scale(1.1);
+}
+
+.quantity-btn {
+    background: #007bff;
+    padding: 10px 14px;
+}
+
+.quantity-btn:hover {
+    background: #0056b3;
+}
+
+.order {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.order h3 {
+    color: #333;
+    font-size: 18px;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: right;
+    color: #222;
+}

@@ -9,7 +9,7 @@ export class AppController {
   root(@Res() res: Response) {
     return res.render(
       this.appService.getViewName(),
-      { message: 'Hello world! MVC' },
+      // { message: 'Hello world! MVC' },
     );
   }
 }
